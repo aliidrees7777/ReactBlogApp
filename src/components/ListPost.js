@@ -91,15 +91,15 @@ class ListPost extends React.Component {
   };
 
   handleRowClick = postId => {
-    this.props.history.push(`/view/${postId}`);
+    this.props.history.push(`/ReactBlogApp/view/${postId}`);
   };
 
   handleAddClick = () => {
-    this.props.history.push(`/add`);
+    this.props.history.push(`/ReactBlogApp/add`);
   };
 
   handleEditClick = postId => {
-    this.props.history.push(`/edit/${postId}`);
+    this.props.history.push(`/ReactBlogApp/edit/${postId}`);
   };
 
   handleDeleteClick = postId => {
@@ -117,7 +117,7 @@ class ListPost extends React.Component {
       .finally(() => {
         this.getPosts();
       });
-    }
+  };
 
   render() {
     const postList = this.props.posts.map(post => {

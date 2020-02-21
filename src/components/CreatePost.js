@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Link, withRouter } from "react-router-dom";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 import { resetPosts } from "../actions/actions";
 
 import { API_ENDPOINT } from "../constants";
@@ -28,20 +28,23 @@ class CreatePost extends React.Component {
     if (this.props.match.params.postId) {
       this.is_Mounted = true;
       this.setState({ isEdit: true });
-    axios
-      .get(`${API_ENDPOINT}posts/${this.props.match.params.postId}`)
-      .then(res => {
-        if (this.is_Mounted) {
+      axios
+        .get(`${API_ENDPOINT}posts/${this.props.match.params.postId}`)
+        .then(res => {
+          if (this.is_Mounted) {
+            this.setState({
+              title: res.data.title,
+              body: res.data.body,
+              tags: res.data.tags
+            });
+          }
+        })
+        .catch(error => {
           this.setState({
-            title: res.data.title,
-            body: res.data.body,
-            tags: res.data.tags
+            error: true,
+            errorMessage: "Unable to fetch Posts!"
           });
-        }
-      })
-      .catch(error => {
-        this.setState({ error: true, errorMessage: "Unable to fetch Posts!" });
-      });
+        });
     }
     this.props.resetPosts();
   }
@@ -55,18 +58,21 @@ class CreatePost extends React.Component {
     const { title, body, tags } = this.state;
     let apiRequest = null;
     if (this.props.match.params.postId) {
-      apiRequest = axios.put(`${API_ENDPOINT}posts/${this.props.match.params.postId}`, { title, body, tags })
+      apiRequest = axios.put(
+        `${API_ENDPOINT}posts/${this.props.match.params.postId}`,
+        { title, body, tags }
+      );
     } else {
-      apiRequest = axios.post(API_ENDPOINT + 'posts/', { title, body, tags })
+      apiRequest = axios.post(API_ENDPOINT + "posts/", { title, body, tags });
     }
     apiRequest
-    .then(() => {
-      this.props.history.push('/');
-    })
-    .catch(error => {
+      .then(() => {
+        this.props.history.push("/ReactBlogApp");
+      })
+      .catch(error => {
         this.setState({ error: "true", errorMessage: error.response });
-    });
-  }
+      });
+  };
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -135,7 +141,7 @@ class CreatePost extends React.Component {
                   ? [submitLoading ? "Editing..." : "Edit"]
                   : [submitLoading ? "Publishing..." : "Publish"]}
               </button>
-              <Link to="/">
+              <Link to="/ReactBlogApp">
                 <button className="btn btn-outline-secondary pb-btn">
                   Cancel
                 </button>
@@ -151,7 +157,7 @@ class CreatePost extends React.Component {
 const mapDispatchToProps = dispatch => {
   return {
     resetPosts: () => dispatch(resetPosts())
-  }
-}
+  };
+};
 
 export default connect(null, mapDispatchToProps)(withRouter(CreatePost));
