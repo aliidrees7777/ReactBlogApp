@@ -13,11 +13,7 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <Route
-            path="https://aliidrees7777.github.io/ReactBlogApp/"
-            exact
-            component={ListPost}
-          />
+          <Route path="/ReactBlogApp" exact component={ListPost} />
           <Route path="/view/:postId" component={ViewPost} />
           <Route path="/add" component={CreatePost} />
           <Route path="/edit/:postId" component={CreatePost} />
