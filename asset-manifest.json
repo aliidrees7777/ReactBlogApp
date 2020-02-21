@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ReactBlogApp/static/css/main.89f3e928.chunk.css",
+    "main.js": "/ReactBlogApp/static/js/main.908c16b7.chunk.js",
+    "main.js.map": "/ReactBlogApp/static/js/main.908c16b7.chunk.js.map",
+    "runtime-main.js": "/ReactBlogApp/static/js/runtime-main.d7ba84d1.js",
+    "runtime-main.js.map": "/ReactBlogApp/static/js/runtime-main.d7ba84d1.js.map",
+    "static/css/2.03a3e2a3.chunk.css": "/ReactBlogApp/static/css/2.03a3e2a3.chunk.css",
+    "static/js/2.ae3064aa.chunk.js": "/ReactBlogApp/static/js/2.ae3064aa.chunk.js",
+    "static/js/2.ae3064aa.chunk.js.map": "/ReactBlogApp/static/js/2.ae3064aa.chunk.js.map",
+    "index.html": "/ReactBlogApp/index.html",
+    "precache-manifest.deca44453563971a1a376282d1e84e35.js": "/ReactBlogApp/precache-manifest.deca44453563971a1a376282d1e84e35.js",
+    "service-worker.js": "/ReactBlogApp/service-worker.js",
+    "static/css/2.03a3e2a3.chunk.css.map": "/ReactBlogApp/static/css/2.03a3e2a3.chunk.css.map",
+    "static/css/main.89f3e928.chunk.css.map": "/ReactBlogApp/static/css/main.89f3e928.chunk.css.map",
+    "static/media/all.min.css": "/ReactBlogApp/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/nbslogo.png": "/ReactBlogApp/static/media/nbslogo.0034edd1.png",
+    "static/media/plus.jpg": "/ReactBlogApp/static/media/plus.631dadfe.jpg",
+    "static/media/ViewPost.css": "/ReactBlogApp/static/media/view.adbf4b1c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7ba84d1.js",
+    "static/css/2.03a3e2a3.chunk.css",
+    "static/js/2.ae3064aa.chunk.js",
+    "static/css/main.89f3e928.chunk.css",
+    "static/js/main.908c16b7.chunk.js"
+  ]
+}
