@@ -14,9 +14,9 @@ class App extends React.Component {
       <Provider store={store}>
         <BrowserRouter>
           <Route path="/ReactBlogApp" exact component={ListPost} />
-          <Route path="/view/:postId" component={ViewPost} />
-          <Route path="/add" component={CreatePost} />
-          <Route path="/edit/:postId" component={CreatePost} />
+          <Route path="/ReactBlogApp/view/:postId" component={ViewPost} />
+          <Route path="/ReactBlogApp/add" component={CreatePost} />
+          <Route path="/ReactBlogApp/edit/:postId" component={CreatePost} />
         </BrowserRouter>
       </Provider>
     );
