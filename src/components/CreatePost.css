@@ -1,0 +1,78 @@
+.add-post{
+    width:100%;
+}
+.menu{
+    padding: 50px;
+  }
+  
+.logo-nbs img {
+    height: 10%;
+    width: 11%;
+    padding-left: 5%;
+    }
+
+.back{
+    margin-top: 50px;
+}
+.post-pic {
+    width: 250px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.add-text {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.title-blog {
+    width: 550px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.comment-section {
+    width: 550px;
+    height: 300px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.post-tag-blog {
+    width: 80%;
+    background-color: #F8F8F8;
+    display: block;
+    margin-right: auto;
+    height: 150px;
+}
+  
+.post-tag-section {
+    width: 80%;
+}
+  
+.plus-pic {
+    width: 35px;
+    height: 30px;
+}
+  
+.last-text {
+    height: 30px;
+}
+  
+.publish-btn {
+    text-align: center;
+    color: white;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2059A6;
+}
+  

@@ -1,0 +1,143 @@
+
+.ListPost {
+    text-align: center;
+    padding: 30px 100px;
+  }
+  
+  
+.menu{
+    padding: 50px;
+  }
+  
+.logo-nbs img {
+    height: 10%;
+    width: 11%;
+    padding-left: 5%;
+    }
+    
+.table {
+      width: 90%;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+.table-header{
+    background-color: blueviolet;
+  }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    /* tr:nth-child(even){background-color: #f2f2f2} */
+
+    
+    th {
+      background-color: #4D4D4D;
+      color: white;
+      border-collapse: collapse;
+    }
+.add-button{
+    background-color: rgb(67, 94, 119);
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none !important;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 0px;
+      cursor: pointer;
+      width: 10%;
+      padding: 10px 10px;
+}
+    
+    
+    .checkboxes
+    {
+      width :2% !important;
+      text-align: center !important;
+    }
+    
+    .post-block
+    {
+      display: flex;
+      width: 90%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    
+    .post-block img
+    {
+      height: 100% ;
+      width: 2%;
+      margin-top: 22px ;
+    }
+    
+    .post-block h3
+    {
+      width: 10%;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    
+    .search-block
+    {
+      width: 100%;
+      float: right;
+      margin: 5px;
+      height: 55px;
+    }
+    
+    .search-section
+    {
+      border: 1px solid black;
+      padding : 0px;
+      width: 28%;
+      float: right;
+      margin: 5px;
+      height: 35px;
+    }
+    
+    .search-section input
+    {
+      border: none !important;
+      width: 80%;
+    }
+    
+    .search-section img
+    {
+      width: 6%;
+      float: right;
+      padding-right: 4%;
+      height: 100%;
+    }
+    
+    .parent-div
+    {
+      color: rgb(67, 94, 119);
+      width: 100%;
+      display: flex;
+    }
+    
+    .child-div1
+    {
+      width: 20%;
+      cursor: pointer;
+    }
+    
+    .child-div2
+    {
+      width: 80%;
+      cursor: pointer;
+    }
+    
+    .link-button-style
+    {
+      color: white 
+    }
+    
+    
+  
