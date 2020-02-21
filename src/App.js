@@ -12,8 +12,8 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <BrowserRouter>
-          <Route path="/ReactBlogApp" exact component={ListPost} />
+        <BrowserRouter basename="/ReactBlogApp">
+          <Route path="/" exact component={ListPost} />
           <Route path="/view/:postId" component={ViewPost} />
           <Route path="/add" component={CreatePost} />
           <Route path="/edit/:postId" component={CreatePost} />
